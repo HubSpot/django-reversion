@@ -217,7 +217,7 @@ class Version(models.Model):
     
     object_id = models.TextField(help_text="Primary key of the model under version control.")
     
-    object_id_int = models.IntegerField(
+    object_id_int = models.BigIntegerField(
         blank = True,
         null = True,
         db_index = True,
